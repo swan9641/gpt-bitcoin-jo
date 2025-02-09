@@ -59,6 +59,19 @@ sudo apt upgrade
 ```
 sudo apt install python3-pip
 ```
+
+###########################################
+### 파이썬 가상환경 설정 
+```
+python3 -m venv bitcoinenv
+
+### 소스
+```
+source bitcoinenv/bin/activate
+
+
+
+
 ### 레포지토리 가져오기
 ```
 git clone https://github.com/youtube-jocoding/gpt-bitcoin.git
