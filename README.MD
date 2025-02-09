@@ -195,5 +195,28 @@ ps ax | grep .py
 kill -9 PID
 ex. kill -9 13586
 ```
+########################################
+# 웹 대시보드 그냥 실행하기
+```
+python3 -m streamlit run streamlit_app.py
+```
+#백그라운드 실행 (웹 대시보드)
+```
+nohup python3 -m streamlit run streamlit_app.py --server.port 8501 > streamlit.log 2>&1 &
+```
+#실행 확인
+```
+ps ax | grep .py
+```
+#vim 에디터로 열기
+```
+vim streamlit.log
+```
+#로그 보기
+```
+cat streamlit.log
+```
+########################################
+
 ## 추후 계획
 - 빗썸, 바이낸스, 코인베이스, OKX, 바이비트도 가능하면 다루겠음
