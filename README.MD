@@ -68,6 +68,7 @@ python3 -m venv bitcoinenv
 ### 소스
 ```
 source bitcoinenv/bin/activate
+```
 #########################################################
 # 현재 경로 상세 출력
 ls -al
