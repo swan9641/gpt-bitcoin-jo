@@ -59,8 +59,7 @@ sudo apt upgrade
 ```
 sudo apt install python3-pip
 ```
-
-###########################################
+##########################
 ### 파이썬 가상환경 설정 
 ```
 python3 -m venv bitcoinenv
@@ -69,7 +68,7 @@ python3 -m venv bitcoinenv
 ```
 source bitcoinenv/bin/activate
 ```
-#########################################################
+###########################
 # 현재 경로 상세 출력
 ```
 ls -al
@@ -114,30 +113,38 @@ vim autotrade.py
 ```
 
 # 그냥 실행하기
+```
 python3 autotrade.py
-
+```
 #백그라운드 실행 (자동매매)
+```
 nohup python3 -u autotrade.py > output.log 2>&1 &
-
+```
 #실행 확인
+```
 ps ax | grep .py
-
+```
 #vim 에디터로 열기
+```
 vim output.log
+```
 #로그 보기
+```
 cat output.log
+```
 #로그 맨 끝 보기
+```
 tail -f output.log
-
+```
 #종료하기 ex. kill -9 13586
+```
 kill -9 PID
-
+```
 #백그라운드 실행 (웹 대시보드)
+```
 nohup python3 -m streamlit run streamlit_app.py --server.port 8501 > streamlit.log 2>&1 &
-
-########################################
-
-
+```
+##############
 ### 레포지토리 가져오기
 ```
 git clone https://github.com/youtube-jocoding/gpt-bitcoin.git
