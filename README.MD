@@ -25,6 +25,9 @@
 - 전략:  8시간에 한번 판단하여 부분 매수/매도 or 홀드, 투자 데이터 기록하고 AI 재귀 개선
 - 뉴스 데이터 조회를 위한 [SerpApi](https://serpapi.com/) 가입 및 API KEY 등록 필요
 
+# strategy.txt 파일로 전략을 차용한다.
+- 전략은 워뇨띠 의 전략 / 유튜브에서 실시간 가져오기보다는, 고정된 전략임으로 그냥 txt 파일로 처리.
+
 ## .env 파일 생성 및 설정
 ```
 OPENAI_API_KEY="YourKey"
